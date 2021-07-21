@@ -1,0 +1,195 @@
+.main-content {
+  min-height: 647px;
+  background-color: $background;
+  background-image: url('../img/back-main-block-mob.png'), url('../img/back-main-block-mob2.jpg');
+  background-repeat: no-repeat;
+  background-position: center 92px, center;
+  background-size: 301px 220px, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/back-main-block-mob@2x.png'), url('../img/back-main-block-mob2@2x.jpg');
+  }
+
+  @media (min-width: 768px) {
+    min-height: 686px;
+    background-image: url('../img/back-main-block-tablet.png'), url('../img/back-main-block-tablet2.jpg');
+    background-position: right 113px, center;
+    background-size: 260px 340px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/back-main-block-tablet@2x.png'), url('../img/back-main-block-tablet2@2x.jpg');
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/back-main-block-desk.png'), url('../img/back-main-block-desk2.png');
+    background-size: 705px 515px, cover;
+    background-position: 85% 256px, center;
+    min-height: 878px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/back-main-block-desk@2x.png'), url('../img/back-main-block-desk2@2x.png');
+    }
+  }
+}
+
+.main-content__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 1411px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}
+
+.main-content__scrool-link {
+  text-decoration: none;
+  color: rgba($white, 0.5%);
+  transform: rotate(270deg);
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  z-index: 9;
+  display: inline;
+  position: absolute;
+  bottom: -97px;
+  left: -20px;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.main-content__heading {
+  margin: 0;
+  padding: 286px 15px 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media (min-width: 768px) {
+    padding: 188px 180px 0 88px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 316px 0 0 0;
+    font-size: 80px;
+    line-height: 94px;
+  }
+}
+
+.main-content__text {
+  position: relative;
+  padding: 0 9px 0 66px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 156.8%;
+  color: $white;
+  margin: 30px 0 42px 0;
+
+  &::before {
+    content: '';
+    width: 33px;
+    height: 2px;
+    display: block;
+    background-color: $white;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+
+    @media (min-width: 768px) {
+      left: 0;
+    }
+
+    @media (min-width: 1024px) {
+      width: 66px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 0 200px 0 48px;
+    margin: 32px 0 57px 88px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 22px;
+    line-height: 34px;
+    margin: 31px 0 37px;
+    padding: 0 300px 0 94px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 700px 0 94px;
+  }
+}
+
+.main-content__btn {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 32px;
+  color: $white;
+  min-height: 55px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none ;
+  background-color: $light-blue;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 auto;
+
+  &:hover {
+    color: $light-blue;
+    background-color: $white;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $light-blue;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 0 0 139px;
+    max-width: 379px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 37px 0 0 94px;
+    max-width: 405px;
+    padding: 0 44px;
+  }
+}
+
+.main-content__btn span {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}

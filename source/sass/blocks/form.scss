@@ -1,0 +1,401 @@
+.form {
+  min-height: 640px;
+  padding: 0 0 20px 0;
+  background-color: $light-blue;
+
+  @media (min-width: 768px) {
+    min-height: 664px;
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/form-back.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 670px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/form-back@2x.png');
+      background-size: contain;
+    }
+  }
+}
+
+.form__wrapper {
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 320px;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    max-width: 590px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 1170px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}
+
+.form__flex-box {
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.form__heading {
+  margin: 0 0 12px 0;
+  padding: 33px 0 0 0;
+  color: $white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+
+  @media (min-width: 768px) {
+    padding: 83px 0 0 0;
+    font-size: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 36px;
+    line-height: 51px;
+  }
+}
+
+.form__text {
+  margin: 0 0 25px 0;
+  padding: 0;
+  color: $white;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 51px;
+  }
+}
+
+.form__main-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.form__fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.form__input-name {
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 279px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 270px;
+  }
+}
+
+.form__input-name input {
+  outline: none;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 17px;
+  background-color: rgba($white, 0.1%);
+  color: $white;
+  border: none;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  &::-webkit-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &::-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-ms-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 279px;
+  }
+}
+
+.form__input-tel {
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 279px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 270px;
+  }
+}
+
+.form__input-tel input {
+  outline: none;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 17px;
+  background-color: rgba($white, 0.1%);
+  color: $white;
+  border: none;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  &::-webkit-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &::-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-ms-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.form__input-textarea {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
+.form__input-textarea textarea {
+  outline: none;
+  width: 100%;
+  height: 104px;
+  padding: 15px 17px;
+  background-color: rgba($white, 0.1%);
+  color: $white;
+  border: none;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  &::-webkit-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &::-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-moz-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  &:-ms-input-placeholder {
+    color:$white;
+    font-family: 'PT Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 768px) {
+    height: 159px;
+  }
+}
+
+.form__bottom-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.form__btn {
+  cursor: pointer;
+  background-color: $light-blue;
+  border-radius: 5px;
+  border: 1px solid $white;
+  padding: 0 20px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  &:hover {
+    background-color: $white;
+    color: $light-blue;
+  }
+
+  &:active {
+    background-color: $light-blue;
+    color: $white;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 279px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 270px;
+  }
+}
+
+.form__checkbox {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  color: $white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 0 0 31px;
+  font-family: 'PT Mono';
+
+  &::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: $light-blue;
+    border: 1px solid $white;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &:focus {
+    outline: 1px solid yellow;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 272px;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 262px;
+  }
+}
+
+.form__bottom-group #checkbox:checked + label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-color: $light-blue;
+  border: 1px solid $white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}

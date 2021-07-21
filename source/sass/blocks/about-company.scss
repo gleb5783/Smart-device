@@ -1,0 +1,220 @@
+.about-company {
+  background-image: url('../img/back-rectangle.png');
+  background-repeat: no-repeat;
+  background-position: 0 722px;
+}
+
+.about-company__list {
+  margin: 37px auto 0;
+  padding: 0 16px 0 14px;
+  list-style: none;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 54px 0 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 30px;
+    margin: 109px auto 0;
+  }
+}
+
+.about-company__item {
+  min-height: 232px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 11px 0 26px;
+  margin-bottom: 20px;
+  border: 1px solid $grey;
+  border-left: 2px solid $light-blue;
+  cursor: pointer;
+  background-color: $white;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    max-width: 345px;
+    margin: 0;
+    padding: 0 20px 0 26px;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 570px;
+    min-height: 299px;
+    padding: 22px 20px 0 43px;
+
+    & br {
+      display: none;
+    }
+  }
+}
+
+.about-company__item svg {
+  position: absolute;
+  top: 25px;
+  fill: $light-blue;
+  left: 27px;
+
+  @media (min-width: 1024px) {
+    top: 44px;
+    left: 45px;
+  }
+}
+
+.about-company__item:hover svg {
+  fill: $white;
+}
+
+.about-company__item:hover .about-company__card-heading {
+  color: $white;
+}
+
+.about-company__item:hover .about-company__text {
+  color: $white;
+}
+
+.about-company__card-heading {
+  margin: 75px 0 16px 0;
+  color: $light-blue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140.62%;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.about-company__text {
+  margin: 0 0 11px 0;
+  color: $dark-grey;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-company__wrapper {
+  margin: 43px 0 65px;
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 15px 0 17px;
+
+  @media (min-width: 768px) {
+    background-image: url('../img/2005.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    min-height: 363px;
+    padding: 0 25px 0 211px;
+    margin: 42px auto 70px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/2005@2x.png');
+      background-size: contain;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    margin: 110px auto 53px;
+    background-position: -25px 0;
+    padding: 0 25px 0 180px;
+    background-image: url('../img/2005desk.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/2005desk@2x.png');
+    }
+  }
+}
+
+.about-company__heading {
+  color: $dark-grey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  margin: 0 0 18px 0;
+
+  @media (min-width: 768px) {
+    margin: 0 0 24px;
+    font-size: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 36px;
+    line-height: 51px;
+  }
+}
+
+.about-company__texts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-grey;
+  font-family: 'PT Mono';
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.about-company__more-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+  text-transform: uppercase;
+  padding: 0;
+  border: 1px solid $light-blue;
+  border-radius: 5px;
+  background-color: $white;
+  color: $light-blue;
+  margin: 29px 0 0 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 0.05em;
+  width: 100%;
+  max-width: 180px;
+
+  &:hover {
+    color: $white;
+    background-color: $light-blue;
+  }
+
+  &:active {
+    color: $light-blue;
+    background-color: $white;
+  }
+
+  @media (min-width: 768px) {
+    margin: 24px 0 0 0;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 36px 0 0 0;
+  }
+}

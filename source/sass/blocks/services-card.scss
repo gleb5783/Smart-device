@@ -1,0 +1,216 @@
+.services-card {
+  background-color: $background;
+  min-height: 1101px;
+
+  @media (min-width: 768px) {
+    min-height: 1127px;
+  }
+
+  @media (min-width: 1024px) {
+    min-height: 938px;
+  }
+}
+
+.services-card__wrapper {
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+  }
+
+  @media (min-width: 1170px) {
+    padding: 0;
+  }
+}
+
+.services-card__heading {
+  color: $white;
+  margin: 0 0 37px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 140.62%;
+  padding: 53px 15px 0 25px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    padding: 53px 132px 0 25px;
+    margin: 0 0 49px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 93px 0 47px;
+    margin: 0;
+  }
+}
+
+.services-card__list {
+  margin: 0;
+  list-style: none;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    padding: 0 26px;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.services-card__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 47px;
+    }
+
+    @media (min-width: 1024px) {
+      margin: 0;
+    }
+  }
+}
+
+.services-card__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 256px;
+
+  &::after {
+    content: '';
+    width: 63px;
+    height: 63px;
+    display: block;
+    background-color: $light-blue;
+    background-image: url('../img/arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    border: 2px solid $light-blue;
+  }
+
+  @media (min-width: 1024px) {
+    width: 308px;
+    min-height: 620px;
+  }
+
+  @media (min-width: 1170px) {
+    width: 370px;
+  }
+}
+
+.services-card__link span {
+  position: absolute;
+  top: 23px;
+  left: 35px;
+  color: $white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: 768px) {
+    top: 41px;
+    left: 43px;
+  }
+
+  @media (min-width: 1024px) {
+    top: 53px;
+    left: 43px;
+  }
+}
+
+.services-card__link--one {
+  background-size: cover;
+  background-image: url('../img/card-one-mob.png');
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/card-one-mob@2x.png');
+  }
+
+  @media (min-width: 768px) {
+    background-image: url('../img/card-one-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-one-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/card-one-desk.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-one-desk@2x.png');
+    }
+  }
+}
+
+.services-card__link--two {
+  background-size: cover;
+  background-image: url('../img/card-two-mob.png');
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/card-two-mob@2x.png');
+  }
+
+  @media (min-width: 768px) {
+    background-image: url('../img/card-two-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-two-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/card-two-desk.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-two-desk@2x.png');
+    }
+  }
+}
+
+.services-card__link--three {
+  background-size: cover;
+  background-image: url('../img/card-three-mob.png');
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/card-three-mob@2x.png');
+  }
+
+  @media (min-width: 768px) {
+    background-image: url('../img/card-three-tablet.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-three-tablet@2x.png');
+    }
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url('../img/card-three-desk.png');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/card-three-desk@2x.png');
+    }
+  }
+}
