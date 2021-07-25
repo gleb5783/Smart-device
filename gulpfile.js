@@ -99,9 +99,14 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copyLibJs", function () {
+  return gulp.src("source/lib-js/*.js")
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "scripts", "copyLibJs"));
 gulp.task("start", gulp.series("build", "server"));
