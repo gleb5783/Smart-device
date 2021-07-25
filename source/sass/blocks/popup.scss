@@ -44,7 +44,7 @@
   background-color: $light-blue;
 }
 
-.popup__heading {
+.popup__wrapper h2 {
   color: $white;
   font-style: normal;
   font-weight: normal;
@@ -53,8 +53,8 @@
   margin: 33px 0 23px;
 }
 
-.popup__text {
-  font-family: 'PT Mono';
+.popup__wrapper p {
+  font-family: 'PT Mono', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -81,42 +81,15 @@
   background-color: rgba($white, 0.1%);
   color: $white;
   border: none;
-  font-family: 'PT Mono';
+  font-family: 'PT Mono', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 
-  &::-webkit-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &::-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-ms-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
+  &::placeholder {
+    color: $white;
+    font-family: 'PT Mono', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -132,42 +105,15 @@
   background-color: rgba($white, 0.1%);
   color: $white;
   border: none;
-  font-family: 'PT Mono';
+  font-family: 'PT Mono', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 
-  &::-webkit-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &::-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-ms-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
+  &::placeholder {
+    color: $white;
+    font-family: 'PT Mono', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -183,42 +129,15 @@
   background-color: rgba($white, 0.1%);
   color: $white;
   border: none;
-  font-family: 'PT Mono';
+  font-family: 'PT Mono', 'Arial', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
 
-  &::-webkit-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &::-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-moz-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  &:-ms-input-placeholder {
-    color:$white;
-    font-family: 'PT Mono';
+  &::placeholder {
+    color: $white;
+    font-family: 'PT Mono', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -238,7 +157,7 @@
   justify-content: center;
   color: $white;
   text-transform: uppercase;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -267,7 +186,7 @@
   font-size: 14px;
   line-height: 16px;
   padding: 0 0 0 31px;
-  font-family: 'PT Mono';
+  font-family: 'PT Mono', 'Arial', sans-serif;
 
   &::before {
     content: '';
@@ -282,7 +201,11 @@
   }
 }
 
-.popup__form-fieldset #popup-checkbox:checked + label::before {
+.popup__checkbox-wrapper {
+  position: relative;
+}
+
+.popup__form-fieldset input:checked + label::before {
   content: '';
   width: 18px;
   height: 18px;

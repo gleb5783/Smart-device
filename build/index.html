@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart-device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font">
 </head>
 <body class="body">
 
@@ -80,10 +81,10 @@
     <section class="main-content">
       <div class="main-content__container">
         <a href="#name" class="main-content__scrool-link">Скролл вниз</a>
-        <h1 class="main-content__heading">
+        <h1>
           Печатные платы
         </h1>
-        <p class="main-content__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
         <a href="#name" class="main-content__btn"><span>Получить</span>&nbsp;Бесплатную консультация</a>
       </div>
     </section>
@@ -94,38 +95,38 @@
           <svg width="30" height="36" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#clock"></use>
           </svg>
-          <h2 class="about-company__card-heading">Оперативные сроки</h2>
-          <p class="about-company__text">Усовершенствованная логистическая система позволяет<br>нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          <h2>Оперативные сроки</h2>
+          <p>Усовершенствованная логистическая система позволяет<br>нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
         <li class="about-company__item" tabindex="0">
           <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#people"></use>
           </svg>
-          <h2 class="about-company__card-heading">Крупные поставщики</h2>
-          <p class="about-company__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+          <h2>Крупные поставщики</h2>
+          <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
           </p>
         </li>
         <li class="about-company__item" tabindex="0">
           <svg width="31" height="26" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#confidentiality"></use>
           </svg>
-          <h2 class="about-company__card-heading">Полная конфиденциальность</h2>
-          <p class="about-company__text">По желанию клиента мы обеспечиваем полную конфеденциальность.
+          <h2>Полная конфиденциальность</h2>
+          <p>По желанию клиента мы обеспечиваем полную конфеденциальность.
           </p>
         </li>
         <li class="about-company__item" tabindex="0">
           <svg width="33" height="32" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="#cash"></use>
           </svg>
-          <h2 class="about-company__card-heading">Персонализация стоимости</h2>
-          <p class="about-company__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы<br> установить ту цену,<br> которая Вас устраивает.</p>
+          <h2>Персонализация стоимости</h2>
+          <p>Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы<br> установить ту цену,<br> которая Вас устраивает.</p>
         </li>
       </ul>
       <div class="about-company__wrapper">
         <h2 class="about-company__heading">О компании</h2>
         <div class="about-company__group-text">
-          <p class="about-company__texts">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about-company__texts">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог.</p>
+          <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог.</p>
         </div>
         <button type="button" class="about-company__more-btn">Подробнее</button>
       </div>
@@ -133,20 +134,44 @@
 
     <section class="services-card">
       <div class="services-card__wrapper">
-        <h2 class="services-card__heading">Service Device предлагает следующие товары и услуги</h2>
+        <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="services-card__list">
           <li class="services-card__item">
-            <a href="#" class="services-card__link services-card__link--one">
+            <a href="#">
+              <div class="services-card__link-img-wrapper">
+                <picture>
+                  <source media="(min-width: 1024px)" type="image/webp" srcset="img/card-one-desk.webp 1x, img/card-one-desk@2x.webp 2x">
+                  <source media="(min-width: 120px) and (max-width: 767px)" type="image/webp" srcset="img/card-one-mob.webp 1x, img/card-one-mob@2x.webp 2x">
+                  <source media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" srcset="img/card-one-tablet.webp 1x, img/card-one-tablet@2x.webp 2x">
+                  <img src="img/card-one-desk.png" alt="Производство печатных плат">
+                </picture>
+              </div>
               <span>Производство<br> печатных плат</span>
             </a>
           </li>
           <li class="services-card__item">
-            <a href="#" class="services-card__link services-card__link--two">
+            <a href="#">
+              <div class="services-card__link-img-wrapper">
+                <picture>
+                  <source media="(min-width: 1024px)" type="image/webp" srcset="img/card-two-desk.webp 1x, img/card-two-desk@2x.webp 2x">
+                  <source media="(min-width: 120px) and (max-width: 767px)" type="image/webp" srcset="img/card-two-mob.webp 1x, img/card-two-mob@2x.webp 2x">
+                  <source media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" srcset="img/card-two-tablet.webp 1x, img/card-two-tablet@2x.webp 2x">
+                  <img src="img/card-two-desk.png" srcset="img/card-two-desk.png 1x, img/card-two-desk@2x.png 2x" alt="Монтаж печатных плат">
+                </picture>
+              </div>
               <span>Монтаж печатных<br> плат</span>
             </a>
           </li>
           <li class="services-card__item">
-            <a href="#" class="services-card__link services-card__link--three">
+            <a href="#">
+              <div class="services-card__link-img-wrapper">
+                <picture>
+                  <source media="(min-width: 1024px)" type="image/webp" srcset="img/card-three-desk.webp 1x, img/card-three-desk@2x.webp 2x">
+                  <source media="(min-width: 120px) and (max-width: 767px)" type="image/webp" srcset="img/card-three-mob.webp 1x, img/card-three-mob@2x.webp 2x">
+                  <source media="(min-width: 768px) and (max-width: 1023px)" type="image/webp" srcset="img/card-three-tablet.webp 1x, img/card-three-tablet@2x.webp 2x">
+                  <img src="img/card-three-desk.png" alt="Комплектующие для светотехники">
+                </picture>
+              </div>
               <span>Комплектующие<br> для светотехники</span>
             </a>
           </li>
@@ -157,9 +182,9 @@
     <section class="form">
       <div class="form__wrapper">
         <div class="form__flex-box">
-          <h2 class="form__heading">Остались вопросы?&nbsp; Задайте их нам!</h2>
-          <p class="form__text">Мы проконсультируем Вас бесплатно</p>
-          <form class="form__main-form" action="#" method="GET" id="main-form">
+          <h2>Остались вопросы?&nbsp; Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form action="#" method="GET" id="main-form">
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Персональные данные</legend>
               <div class="form__input-name">
@@ -172,15 +197,17 @@
               </div>
               <div class="form__input-textarea">
                 <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                <label for="textarea" class="visually-hidden">Ваш вопрос</label>
               </div>
             </fieldset>
             <div class="form__bottom-group">
               <button class="form__btn" type="submit">Задать вопрос</button>
-
-              <input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden" required="">
-              <label class="form__checkbox" for="checkbox" tabindex="0">
-                Я согласен на обработку персональных данных
-              </label>
+              <div class="form__checkbox-wrapper">
+                <input type="checkbox" name="checkbox" id="checkbox" class="visually-hidden" required="">
+                <label class="form__checkbox" for="checkbox" tabindex="0">
+                  Я согласен на обработку персональных данных
+                </label>
+              </div>
             </div>
           </form>
         </div>
@@ -190,9 +217,9 @@
     <section class="popup popup--hidden">
       <div class="popup__wrapper">
         <button class="popup__close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
-        <h2 class="popup__heading">Закажите звонок</h2>
-        <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form class="popup__form" action="#" method="GET" id="popup-form">
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="#" method="GET" id="popup-form">
           <fieldset class="popup__form-fieldset">
             <legend class="visually-hidden">Персональные данные</legend>
 
@@ -208,13 +235,16 @@
 
             <div class="popup__form-input-textarea">
               <textarea name="text" id="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <label for="text" class="visually-hidden">Ваш вопрос</label>
             </div>
 
             <button class="popup__form-btn" type="submit">Отправить</button>
-            <input type="checkbox" name="checkbox" id="popup-checkbox" class="visually-hidden" required="">
-            <label class="popup__form-checkbox" for="popup-checkbox">
-              Я согласен на обработку персональных данных
-            </label>
+            <div class="popup__checkbox-wrapper">
+              <input type="checkbox" name="checkbox" id="popup-checkbox" class="visually-hidden" required="">
+              <label class="popup__form-checkbox" for="popup-checkbox">
+                Я согласен на обработку персональных данных
+              </label>
+            </div>
           </fieldset>
         </form>
       </div>
@@ -259,7 +289,7 @@
         <ul class="footer__list-nav">
           <li class="footer__list-nav-item-head">
             <h2 class="footer__list-nav-heading">Разделы сайта</h2>
-            <button type="button" class="footer__list-nav-open footer__list-nav-close"></button>
+            <button type="button" id="drop-down1" class="footer__list-drop-down-open footer__list-drop-down-close"></button>
           </li>
           <li class="footer__list-nav-item-bottom">
             <ul class="footer__drop-list">
@@ -299,7 +329,7 @@
         <ul class="footer__list-address">
           <li class="footer__list-address-item">
             <h2 class="footer__list-address-heading">Наш офис</h2>
-            <button type="button" class="footer__list-address-open footer__list-address-close"></button>
+            <button type="button" id="drop-down2" class="footer__list-drop-down-open footer__list-drop-down-close"></button>
           </li>
           <li class="footer__list-address-item-bottom">
             <ul class="footer__list-address-drop-down">
@@ -324,8 +354,8 @@
           <ul class="footer__list-сopyright">
             <li class="footer__list-сopyright-item footer__list-сopyright-item--hidden">Все права защищены</li>
             <li class="footer__list-сopyright-item footer__list-сopyright-item--hidden">1999-2018 SD Service Devices</li>
-            <li class="footer__list-сopyright-item">Условия конфиденциальности</li>
-            <li class="footer__list-сopyright-item">Developed by wow studio</li>
+            <li class="footer__list-сopyright-item"><a href="#">Условия конфиденциальности</a></li>
+            <li class="footer__list-сopyright-item"><a href="#">Developed by wow studio</a></li>
           </ul>
         </li>
       </ul>

@@ -7,25 +7,27 @@
 }
 
 .header__nav {
-  min-height: 72px;
-  display: flex;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1415px;
   padding: 0 20px;
+  min-height: 118px;
+  margin: 0 auto;
+  display: flex;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+
+  @media (max-width: 1023px) {
     padding: 0 25px;
     min-height: 92px;
   }
 
-  @media (min-width: 1024px) {
-    width: 100%;
-    max-width: 1415px;
+  @media (max-width: 767px) {
+    min-height: 72px;
+    display: flex;
+    margin: 0 auto;
     padding: 0 20px;
-    min-height: 118px;
-  }
-
-  @media (min-width: 1440px) {
-    padding: 0;
   }
 }
 
@@ -82,11 +84,11 @@
 }
 
 .header__logo-span {
-  display: none;
+  display: inline;
+  margin-left: 68px;
 
-  @media (min-width: 768px) {
-    display: inline;
-    margin-left: 68px;
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -98,7 +100,7 @@
 }
 
 .header__logo-span--bottom {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -107,15 +109,15 @@
 }
 
 .header__list-contacts {
+  gap: 0;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 23px;
 
-  @media (min-width: 1024px) {
-    gap: 0;
+  @media (max-width: 1023px) {
+    gap: 23px;
   }
 }
 
@@ -132,10 +134,10 @@
 }
 
 .header__list-contacts-item--hidden {
-  display: none;
+  display: flex;
 
-  @media (min-width: 1024px) {
-    display: flex;
+  @media (max-width: 1023px) {
+    display: none;
   }
 }
 
@@ -150,11 +152,11 @@
   text-decoration: none;
 
   &:hover span {
-    font-size: 18px;
+    color: $light-blue;
   }
 
   &:active span {
-    color: $light-blue;
+    color: grey;
   }
 
   &::before {
@@ -184,15 +186,15 @@
 }
 
 .header__list-contacts-mail span {
-  display: none;
+  display: inline;
+  font-family: 'PT Mono', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
 
-  @media (min-width: 1024px) {
-    display: inline;
-    font-family: 'PT Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
+  @media (max-width: 1023px) {
+    display: none;
   }
 }
 
@@ -207,11 +209,11 @@
   text-decoration: none;
 
   &:hover span {
-    font-size: 18px;
+    color: $light-blue;
   }
 
   &:active span {
-    color: $light-blue;
+    color: grey;
   }
 
   &::before {
@@ -245,7 +247,7 @@
 
   @media (min-width: 1024px) {
     display: inline;
-    font-family: 'PT Mono';
+    font-family: 'PT Mono', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -264,7 +266,7 @@
   border: 1px solid $white;
   border-radius: 5px;
   padding: 0 26px;
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

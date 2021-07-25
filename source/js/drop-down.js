@@ -1,32 +1,27 @@
-var btn = document.querySelector('.footer__list-nav-open');
+var btn = document.querySelector('#drop-down1');
 var dropDown = document.querySelector('.footer__list-nav-item-bottom');
-var btn2 = document.querySelector('.footer__list-address-open');
+var btn2 = document.querySelector('#drop-down2');
 var dropDown2 = document.querySelector('.footer__list-address-item-bottom');
+var allDropDownBtn = document.querySelectorAll('.footer__list-drop-down-open');
 
 if(document.documentElement.scrollWidth < 768) {
-  dropDown.classList.add('footer__list-nav-item--hidden');
-  dropDown2.classList.add('footer__list-nav-item--hidden');
-  btn.classList.remove('footer__list-nav-close');
-  btn2.classList.remove('footer__list-address-close');
+  dropDown.classList.add('footer__list-drop-down--hidden');
+  dropDown2.classList.add('footer__list-drop-down--hidden');
+  btn.classList.remove('footer__list-drop-down-close');
+  btn2.classList.remove('footer__list-drop-down-close');
 }
 
-function showDropDown() {
-  if(dropDown2.classList.length === 1) {
-    btn2.classList.toggle('footer__list-address-close');
-    dropDown2.classList.toggle('footer__list-nav-item--hidden');
-  }
-  btn.classList.toggle('footer__list-nav-close');
-  dropDown.classList.toggle('footer__list-nav-item--hidden');
-}
-
-function showDropDown2() {
+function showDropDown (evt) {
   if(dropDown.classList.length === 1) {
-    btn.classList.toggle('footer__list-nav-close');
-    dropDown.classList.toggle('footer__list-nav-item--hidden');
+    btn.classList.toggle('footer__list-drop-down-close');
+    dropDown.classList.toggle('footer__list-drop-down--hidden');
   }
-  btn2.classList.toggle('footer__list-address-close');
-  dropDown2.classList.toggle('footer__list-nav-item--hidden');
+  if(dropDown2.classList.length === 1) {
+    btn2.classList.toggle('footer__list-drop-down-close');
+    dropDown2.classList.toggle('footer__list-drop-down--hidden');
+  }
+  evt.target.classList.toggle('footer__list-drop-down-close');
+  evt.target.closest('ul').lastElementChild.classList.toggle('footer__list-drop-down--hidden');
 }
 
-btn.addEventListener('click', showDropDown);
-btn2.addEventListener('click', showDropDown2);
+allDropDownBtn.forEach(element => element.addEventListener('click', showDropDown));
