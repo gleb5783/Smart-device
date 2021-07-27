@@ -23,12 +23,12 @@ allDropDownBtn.forEach((element) => element.addEventListener('click', () => {
     if(parent.classList.contains('footer__list-drop-down--hidden')) {
       hideDropDown();
       parent.classList.remove('footer__list-drop-down--hidden');
+      allDropDownBtn.forEach(el => el.className = "footer__drop-down-btn");
     }
     else {
       hideDropDown();
     }
 
     element.classList.toggle('footer__drop-down-btn--close');
-
   })
 );

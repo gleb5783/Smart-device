@@ -55,12 +55,6 @@ allDropDownBtn.forEach((element) => element.addEventListener('click', () => {
       for (let i = 0; i < allDropDownContainers.length; i++) {
         if (allDropDownContainers[i].classList.length === 1) {
           allDropDownContainers[i].classList.add('footer__list-drop-down--hidden');
-          element.classList.remove('footer__drop-down-btn--close');
-        }
-
-        if (allDropDownContainers[i].classList.length === 2) {
-          element.classList.add('footer__drop-down-btn--close');
-          allDropDownBtn.forEach((el) => el.className="footer__drop-down-btn footer__drop-down-btn--close");
         }
       }
     }
@@ -68,12 +62,16 @@ allDropDownBtn.forEach((element) => element.addEventListener('click', () => {
     if(parent.classList.contains('footer__list-drop-down--hidden')) {
       hideDropDown();
       parent.classList.remove('footer__list-drop-down--hidden');
+      allDropDownBtn.forEach(el => el.className = "footer__drop-down-btn");
     }
     else {
       hideDropDown();
     }
+    // if (parent.classList.contains('footer__list-drop-down--hidden')) {
+    //   element.className = 'footer__drop-down-btn footer__drop-down-btn--close';
+    // }
 
-    // element.classList.toggle('footer__drop-down-btn--close');
+    element.classList.toggle('footer__drop-down-btn--close');
 
   })
 );
