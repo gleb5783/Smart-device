@@ -16,17 +16,12 @@
   position: absolute;
   top: 136px;
   left: 50%;
-  margin-left: -160px;
   width: 100%;
-  max-width: 320px;
+  margin-left: -245px;
+  max-width: 490px;
   min-height: 605px;
   padding: 0 39px 36px;
   background-color: $light-blue;
-
-  @media (min-width: 490px) {
-    max-width: 490px;
-    margin-left: -245px;
-  }
 }
 
 .popup__close-btn {
@@ -42,6 +37,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $light-blue;
+
+  &:hover {
+    background-image: url('../../img/close-hover.svg');
+  }
+
+  &:active {
+    background-image: url('../img/close-popup.svg');
+  }
 }
 
 .popup__wrapper h2 {
@@ -95,6 +98,10 @@
     font-size: 16px;
     line-height: 22px;
   }
+
+  &:focus {
+    border: 2px solid $white;
+  }
 }
 
 .popup__form-input-tel input {
@@ -119,6 +126,10 @@
     font-size: 16px;
     line-height: 22px;
   }
+
+  &:focus {
+    border: 2px solid $white;
+  }
 }
 
 .popup__form-input-textarea textarea {
@@ -142,6 +153,10 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  &:focus {
+    border: 2px solid $white;
   }
 }
 
