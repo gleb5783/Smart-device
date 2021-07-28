@@ -154,6 +154,7 @@
 
   &:focus {
     border: 2px solid $white;
+    padding: 0 15px;
   }
 }
 
@@ -195,13 +196,12 @@
 
   &:focus {
     border: 2px solid $white;
+    padding: 0 15px;
   }
 }
 
 .form__input-textarea {
-  @media (min-width: 768px) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .form__input-textarea textarea {
@@ -229,6 +229,7 @@
 
   &:focus {
     border: 2px solid $white;
+    padding: 13px 15px;
   }
 
   @media (max-width: 767px) {

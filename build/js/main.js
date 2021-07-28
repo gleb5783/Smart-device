@@ -67,12 +67,8 @@ allDropDownBtn.forEach((element) => element.addEventListener('click', () => {
     else {
       hideDropDown();
     }
-    // if (parent.classList.contains('footer__list-drop-down--hidden')) {
-    //   element.className = 'footer__drop-down-btn footer__drop-down-btn--close';
-    // }
 
     element.classList.toggle('footer__drop-down-btn--close');
-
   })
 );
 
