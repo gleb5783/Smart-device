@@ -9,7 +9,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/form-back@2x.png');
-    background-size: contain;
+    background-size: 1920px 765px;
   }
 
   @media (max-width: 1023px) {
@@ -26,8 +26,12 @@
   max-width: 1170px;
   display: flex;
   justify-content: flex-end;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 auto;
+
+  @media (max-width: 1220px) {
+    padding: 0 20px;
+  }
 
   @media (max-width: 1023px) {
     padding: 0;
@@ -55,7 +59,7 @@
 .form__flex-box h2 {
   font-size: 36px;
   line-height: 51px;
-  margin: 96px 0 12px 0;
+  margin: 91px 0 9px 0;
   color: $white;
   font-style: normal;
   font-weight: normal;
@@ -76,7 +80,7 @@
 }
 
 .form__flex-box p {
-  margin: 0 0 25px 0;
+  margin: 0 0 50px 0;
   padding: 0;
   color: $white;
   font-family: 'PT Mono', 'Arial', sans-serif;
@@ -156,6 +160,11 @@
     border: 2px solid $white;
     padding: 0 15px;
   }
+
+  &:hover {
+    padding: 0 15px;
+    border: 2px solid $white;
+  }
 }
 
 .form__input-tel {
@@ -198,6 +207,11 @@
     border: 2px solid $white;
     padding: 0 15px;
   }
+
+  &:hover {
+    padding: 0 15px;
+    border: 2px solid $white;
+  }
 }
 
 .form__input-textarea {
@@ -230,6 +244,11 @@
   &:focus {
     border: 2px solid $white;
     padding: 13px 15px;
+  }
+
+  &:hover {
+    padding: 13px 15px;
+    border: 2px solid $white;
   }
 
   @media (max-width: 767px) {

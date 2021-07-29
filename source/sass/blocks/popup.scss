@@ -22,6 +22,12 @@
   min-height: 605px;
   padding: 0 39px 36px;
   background-color: $light-blue;
+
+  @media (max-width: 490px) {
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
 }
 
 .popup__close-btn {
@@ -103,6 +109,11 @@
     border: 2px solid $white;
     padding: 0 15px;
   }
+
+  &:hover {
+    padding: 0 15px;
+    border: 2px solid $white;
+  }
 }
 
 .popup__form-input-tel input {
@@ -132,6 +143,11 @@
     border: 2px solid $white;
     padding: 0 15px;
   }
+
+  &:hover {
+    padding: 0 15px;
+    border: 2px solid $white;
+  }
 }
 
 .popup__form-input-textarea textarea {
@@ -160,6 +176,11 @@
   &:focus {
     border: 2px solid $white;
     padding: 13px 15px;
+  }
+
+  &:hover {
+    padding: 13px 15px;
+    border: 2px solid $white;
   }
 }
 

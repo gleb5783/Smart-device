@@ -1,6 +1,6 @@
 .footer {
   background-color: $white;
-  min-height: 317px;
+  min-height: 100px;
 
   @media (max-width: 1023px) {
     min-height: 457px;
@@ -21,6 +21,7 @@
 
   @media (max-width: 1023px) {
     margin: 0;
+    padding: 0;
   }
 
   @media (max-width: 767px) {
@@ -42,7 +43,7 @@ footer a {
 .footer__list-group {
   display: flex;
   flex-wrap: nowrap;
-  padding: 65px 0 55px 0;
+  padding: 0;
   border: none;
   justify-content: space-between;
   max-width: 1440px;
@@ -70,12 +71,13 @@ footer a {
   align-items: flex-start;
   max-width: 216px;
   gap: 54px;
+  padding: 65px 0 0 12px;
 
   @media (max-width: 1023px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 19px 37px 26px 25px;
+    padding: 0 24px;
     min-height: 97px;
     gap: 20px;
     border-bottom: 1px solid rgba($footer-list-border, 0.2%);
@@ -85,7 +87,8 @@ footer a {
 
   @media (max-width: 767px) {
     flex-direction: column;
-    padding: 0 0 54px;
+    padding: 0 0 54px 0;
+    gap: 0;
   }
 }
 
@@ -198,12 +201,13 @@ footer a {
   flex-basis: auto;
   max-width: 516px;
   width: 100%;
-  padding-left: 100px;
+  padding-top: 36px;
+  padding-left: 41px;
   margin: 0;
 
   @media (max-width: 1023px) {
     border: none;
-    padding: 11px 0 0 0;
+    padding: 11px 0 0 11px;
     flex-basis: 50%;
   }
 
@@ -284,12 +288,17 @@ footer a {
 .footer__drop-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 25px;
 
   @media (max-width: 1439px) {
     flex-direction: column;
+  }
+}
+
+.footer__drop-list li {
+  &:not(:last-child) {
+    margin-right: 36px;
   }
 }
 
@@ -317,10 +326,12 @@ footer a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 0 17px 0 0;
+  padding: 35px 0 0 0;
 
   @media (max-width: 1023px) {
     border: none;
-    padding: 10px 27px 0 24px;
+    padding: 10px 0 0 0;
     flex-basis: 50%;
   }
 
@@ -343,7 +354,6 @@ footer a {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  gap: 10px;
 
   @media (max-width: 1023px) {
     padding: 0 0 25px;
@@ -387,17 +397,21 @@ footer a {
 }
 
 .footer__сopyright {
+  margin: 30px 0 0 0;
   width: 100%;
+  min-height: 52px;
   border-top: 1px solid rgba($footer-list-border, 0.2%);
 
   @media (max-width: 1023px) {
     border: none;
+    margin: 0;
+    min-height: 69px;
   }
 }
 
 .footer__list-сopyright-wrapper {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1415px;
   margin: 0 auto;
 }
 
@@ -408,10 +422,12 @@ footer a {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  padding: 21px 0 24px;
+  padding: 0;
+  padding: 14px 0;
 
   @media (max-width: 1023px) {
-    padding: 30px 27px 24px;
+    padding: 0 27px;
+    align-items: center;
     min-height: 69px;
   }
 

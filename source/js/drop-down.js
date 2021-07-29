@@ -1,11 +1,13 @@
 var allDropDownBtn = document.querySelectorAll('.footer__drop-down-btn');
 var allDropDownContainers = document.querySelectorAll('.footer__list-drop-down-container');
+var mainBtn = document.querySelector('.main-content__btn');
 
 if(document.documentElement.scrollWidth < 768) {
   allDropDownContainers.forEach(element => element.classList.add('footer__list-drop-down--hidden'));
   allDropDownBtn.forEach(element => element.classList.remove('footer__drop-down-btn--close'));
 }
 else {
+  mainBtn.innerText = 'Получить бесплатную консультацию';
   allDropDownBtn.forEach(element => element.setAttribute("disabled", "disabled"));
 }
 
@@ -32,3 +34,6 @@ allDropDownBtn.forEach((element) => element.addEventListener('click', () => {
     element.classList.toggle('footer__drop-down-btn--close');
   })
 );
+
+
+
