@@ -20,11 +20,9 @@
   padding: 0;
   width: 100%;
   max-width: 1170px;
-  gap: 30px;
 
   @media (max-width: 1023px) {
     justify-content: center;
-    gap: 38px;
     padding: 0;
     margin: 54px 0 0 0;
   }
@@ -33,13 +31,11 @@
     flex-direction: column;
     padding: 0 14px;
     margin: 37px 0 0 0;
-    gap: 20px;
   }
 }
 
 .about-company__item {
   position: relative;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -56,6 +52,26 @@
 
   &:hover {
     background-color: $light-blue;
+  }
+
+  &:nth-child(2n) {
+    margin: 0 0 30px 15px;
+
+    @media (max-width: 767px) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    margin: 0 15px 30px 0;
+
+    @media (max-width: 767px) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    max-width: 473px;
   }
 
   @media (max-width: 1023px) {

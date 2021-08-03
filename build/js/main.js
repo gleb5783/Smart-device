@@ -5,7 +5,6 @@ var mainBtn = document.querySelector('.main-content__btn');
 if(document.documentElement.scrollWidth < 768) {
   allDropDownContainers.forEach(element => element.classList.add('footer__list-drop-down--hidden'));
   allDropDownBtn.forEach(element => element.classList.remove('footer__drop-down-btn--close'));
-  mainBtn.innerText = 'Бесплатная консультация';
 }
 else {
   mainBtn.innerText = 'Получить бесплатную консультацию';
@@ -52,6 +51,32 @@ var maskOptions = {
 
 var mask = IMask(elements, maskOptions);
 
+
+function inputCheck () {
+  if (element.value.length !== 16) {
+    element.setCustomValidity ('Введите полный номер');
+  }
+  else {
+    element.setCustomValidity('');
+  }
+
+  element.reportValidity();
+}
+
+function inputPopUpCheck () {
+  if (elements.value.length !== 16) {
+    elements.setCustomValidity ('Введите полный номер');
+  }
+  else {
+    elements.setCustomValidity('');
+  }
+
+  elements.reportValidity();
+}
+
+elements.addEventListener('input', inputPopUpCheck)
+element.addEventListener('input', inputCheck);
+
 var ESC_BUTTON = 'Esc';
 var ESCAPE_BUTTON = 'Escape';
 var popup = document.querySelector('.popup');
@@ -65,12 +90,14 @@ function isEscEvent(evt) {
 function closeEscMenu(evt) {
   if (isEscEvent(evt)) {
     popup.classList.add('popup--hidden');
+    document.body.style.overflow = 'auto';
   }
 }
 
 function closeClickPopup(evt) {
   if(evt.target === popup) {
     popup.classList.add('popup--hidden');
+    document.body.style.overflow = 'auto';
   }
 }
 
@@ -78,6 +105,7 @@ var closePopup = () => {
   document.removeEventListener('click', closeClickPopup);
   document.removeEventListener('keydown', closeEscMenu);
   popup.classList.add('popup--hidden');
+  document.body.style.overflow = 'auto';
 }
 
 var showPopup = () => {
@@ -86,6 +114,7 @@ var showPopup = () => {
   document.addEventListener('keydown', closeEscMenu);
   popup.classList.remove('popup--hidden');
   document.querySelector('#popup-name').focus();
+  document.body.style.overflow = 'hidden';
 }
 
 openPopup.addEventListener('click', showPopup);

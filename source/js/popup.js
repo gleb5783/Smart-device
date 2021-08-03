@@ -11,12 +11,14 @@ function isEscEvent(evt) {
 function closeEscMenu(evt) {
   if (isEscEvent(evt)) {
     popup.classList.add('popup--hidden');
+    document.body.style.overflow = 'auto';
   }
 }
 
 function closeClickPopup(evt) {
   if(evt.target === popup) {
     popup.classList.add('popup--hidden');
+    document.body.style.overflow = 'auto';
   }
 }
 
@@ -24,6 +26,7 @@ var closePopup = () => {
   document.removeEventListener('click', closeClickPopup);
   document.removeEventListener('keydown', closeEscMenu);
   popup.classList.add('popup--hidden');
+  document.body.style.overflow = 'auto';
 }
 
 var showPopup = () => {
@@ -32,6 +35,7 @@ var showPopup = () => {
   document.addEventListener('keydown', closeEscMenu);
   popup.classList.remove('popup--hidden');
   document.querySelector('#popup-name').focus();
+  document.body.style.overflow = 'hidden';
 }
 
 openPopup.addEventListener('click', showPopup);

@@ -79,14 +79,25 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+}
+
+.popup__form-input-name {
+  margin-bottom: 30px;
+}
+
+.popup__form-input-tel {
+  margin-bottom: 30px;
+}
+
+.popup__form-input-textarea {
+  margin-bottom: 30px;
 }
 
 .popup__form-input-name input {
   outline: none;
   width: 100%;
   min-height: 52px;
-  padding: 0 17px;
+  padding: 15px 17px;
   background-color: rgba($white, 0.1%);
   color: $white;
   border: none;
@@ -107,11 +118,11 @@
 
   &:focus {
     border: 2px solid $white;
-    padding: 0 15px;
+    padding: 13px 15px;
   }
 
   &:hover {
-    padding: 0 15px;
+    padding: 13px 15px;
     border: 2px solid $white;
   }
 }
@@ -120,7 +131,7 @@
   outline: none;
   width: 100%;
   min-height: 52px;
-  padding: 0 17px;
+  padding: 15px 17px;
   background-color: rgba($white, 0.1%);
   color: $white;
   border: none;
@@ -141,16 +152,17 @@
 
   &:focus {
     border: 2px solid $white;
-    padding: 0 15px;
+    padding: 13px 15px;
   }
 
   &:hover {
-    padding: 0 15px;
+    padding: 13px 15px;
     border: 2px solid $white;
   }
 }
 
 .popup__form-input-textarea textarea {
+  resize: none;
   outline: none;
   width: 100%;
   height: 104px;
@@ -190,6 +202,7 @@
   border-radius: 5px;
   border: 1px solid $white;
   padding: 0 20px;
+  margin-bottom: 30px;
   min-height: 46px;
   display: flex;
   align-items: center;
@@ -237,6 +250,10 @@
     position: absolute;
     left: 0;
     top: 0;
+  }
+
+  &:focus {
+    outline: 1px solid $white;
   }
 }
 

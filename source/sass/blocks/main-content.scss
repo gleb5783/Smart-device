@@ -10,6 +10,14 @@
     background-image: url('../img/back-main-block-desk@2x.png'), url('../img/back-main-block-desk2@2x.png');
   }
 
+  @media (max-width: 1596px) {
+    background-position: 100% 256px,center;
+  }
+
+  @media (max-width: 1168px) {
+    background-position: 206% 256px,center;
+  }
+
   @media (max-width: 1023px) {
     min-height: 686px;
     background-image: url('../img/back-main-block-tablet.png'), url('../img/back-main-block-tablet2.jpg');
@@ -65,8 +73,8 @@
   z-index: 9;
   display: inline;
   position: absolute;
-  bottom: -150px;
-  left: -39px;
+  bottom: -130px;
+  left: -29px;
 
   &:hover {
     color: $light-blue;
@@ -140,11 +148,15 @@
   }
 
   @media (max-width: 1439px) {
-    padding: 0 300px 0 94px;
+    padding: 0 600px 0 94px;
+  }
+
+  @media (max-width: 1120px) {
+    padding: 0 400px 0 94px;
   }
 
   @media (max-width: 1023px) {
-    padding: 0 200px 0 50px;
+    padding: 0 260px 0 50px;
     margin: 26px 0 0 88px;
     font-size: 18px;
   }
@@ -178,7 +190,7 @@
   line-height: 19px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin: 37px 0 0 93px;
+  margin: 37px 0 20px 93px;
 
   &:hover {
     color: $light-blue;
@@ -191,13 +203,13 @@
   }
 
   @media (max-width: 1023px) {
-    margin: 46px 57px 0 139px;
+    margin: 46px 57px 20px 139px;
     max-width: 379px;
     padding: 0;
   }
 
   @media (max-width: 767px) {
-    margin: 42px 0 0 18px;
+    margin: 42px 0 20px 18px;
     padding: 0;
     max-width: 287px;
     width: 100%;
