@@ -95,7 +95,6 @@ footer a {
 .footer__list-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
 
   &:not(:last-child) {
     margin: 0 0 54px 0;
@@ -199,6 +198,10 @@ footer a {
   width: 27px;
   height: 27px;
   border-radius: 100%;
+
+  &:not(:last-child) {
+    margin: 0 15px 15px 0;
+  }
 }
 
 .footer__list-nav {
