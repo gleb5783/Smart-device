@@ -2,8 +2,8 @@
   position: fixed;
   top: 0;
   background-color: rgba($black, 0.5%);
-  min-height: 605px;
   width: 100%;
+  overflow-y: auto;
   height: 100%;
   z-index: 10;
 }
@@ -19,7 +19,8 @@
   width: 100%;
   margin-left: -245px;
   max-width: 490px;
-  min-height: 605px;
+  max-height: 700px;
+  overflow-y: auto;
   padding: 0 39px 36px;
   background-color: $light-blue;
 
@@ -226,6 +227,10 @@
     background-color: $light-blue;
     color: $white;
   }
+
+  &:focus {
+    outline: 1px solid $white;
+  }
 }
 
 .popup__form-checkbox {
@@ -236,6 +241,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  max-width: 400px;
+  width: 100%;
   line-height: 16px;
   padding: 0 0 0 31px;
   font-family: 'PT Mono', 'Arial', sans-serif;

@@ -320,6 +320,7 @@ footer a {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+  margin-top: 2px;
   line-height: 25px;
   color: rgba($background, 00.5%);
 
@@ -457,10 +458,29 @@ footer a {
   }
 }
 
+.footer__list-сopyright > li > ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 816px;
+  width: 100%;
+}
+
+.footer__list-сopyright > li > ul > li {
+  margin: 5px 59px 5px 0;
+
+  @media (max-width: 767px) {
+    margin: 0;
+  }
+}
+
 .footer__list-сopyright-item {
   color: rgba($background, 0.5%);
   font-style: normal;
   font-weight: normal;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.04em;

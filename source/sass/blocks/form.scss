@@ -310,6 +310,10 @@
     color: $white;
   }
 
+  &:focus {
+    outline: 1px solid $white;
+  }
+
   @media (max-width: 1023px) {
     width: 100%;
     max-width: 279px;
@@ -333,7 +337,7 @@
   padding: 7px 0 0 31px;
   font-family: 'PT Mono', 'Arial', sans-serif;
   max-width: 262px;
-  width: 100%;
+  width: 228px;
 
   &::before {
     content: '';
@@ -377,7 +381,7 @@
   border: 1px solid $white;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 7px;
   background-image: url('../img/check.svg');
   background-repeat: no-repeat;
   background-position: center;
